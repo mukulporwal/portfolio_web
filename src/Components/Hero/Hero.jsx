@@ -50,7 +50,7 @@ export default function Hero() {
               onClick={(e) => handleScroll(e, "contact")}>Connect with me</a>
           </button>
           <button className="px-8 py-3 border-2 border-white rounded-full font-light cursor-pointer hover:border-blue-500 transition-all duration-300">
-            <a href="https://drive.google.com/file/d/1jZBKmEnzpzP7DQct0SpnSuIL3x-cwt5y/view?usp=drive_link" target="_blank" rel="noopener noreferrer">My Resume</a>
+            <a href="https://drive.google.com/file/d/1g-9xZBX4G6ig4gAk9Z3wYd2e-iC2fABE/view?usp=drive_link" target="_blank" rel="noopener noreferrer">My Resume</a>
           </button>
         </div>
       </div>

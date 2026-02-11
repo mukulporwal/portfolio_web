@@ -9,7 +9,7 @@ export default function Skills() {
         </h2>
         <div className="container mx-auto max-w-6xl flex flex-wrap items-center justify-around  gap-10">
           {skillsData.map((skill, index) => (
-            <div className="w-50 h-38 rounded-xl hover:scale-105 transition-transform duration-300 hover:border-white border-1 " key={index}>
+            <div className="w-40 h-28 rounded-xl hover:scale-105 transition-transform duration-300 hover:border-white border-1 " key={index}>
               <img
                 src={skill.image}
                 alt={skill.name}

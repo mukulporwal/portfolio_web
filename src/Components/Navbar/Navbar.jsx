@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
-import logo from "../../assets/logo.png";
+// import logo from "../../assets/logo.png";
+import logo from "/logo.png"
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -73,25 +74,40 @@ const Navbar = () => {
 
   return (
     <>
-      <header className="fixed inset-x-0 top-0 z-50 bg-black/20 backdrop-blur-sm">
+      <header className="fixed inset-x-0 top-0 z-50 bg-black/10 backdrop-blur-sm">
         <nav
           aria-label="Global"
           className="flex items-center justify-between p-6 lg:px-30"
         >
           {/* Logo */}
-          <div className="flex lg:flex-1">
+          {/* <div className=" flex lg:flex-1">
             <a 
               href="#home" 
               onClick={(e) => handleScroll(e, "home")}
               className="-m-1.5 p-1.5"
-            >
+            > */}
               {/* <span className="sr-only">Your Company</span> */}
-              <img
+              {/* <img
                 src={logo}
                 alt="Logo"
-                className="h-12 w-auto shadow-lg shadow-purple-500/50 rounded-full"
+                className=" h-12 w-auto shadow-lg  rounded-full brightness-125 contrast-125 group-hover:brightness-150 transition-all duration-300"
               />
             </a>
+          </div> */}
+
+          <div className="flex lg:flex-1">
+            <button 
+              onClick={(e) => handleScroll(e, "home")}
+              className="relative group cursor-pointer transform transition-all duration-300 hover:scale-110 active:scale-95"
+            >
+              <div className="h-full w-full rounded-full p-1 flex items-center justify-center">
+                <img
+                  src={logo}
+                  alt="Logo"
+                  className="h-12 w-full object-contain rounded-full brightness-125 contrast-125 group-hover:brightness-150 transition-all duration-300"
+                />
+              </div>
+            </button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -99,7 +115,7 @@ const Navbar = () => {
             <button
               type="button"
               onClick={() => setMobileMenuOpen(true)}
-              className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-200 hover:bg-white/10 transition-colors"
+              className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-black-200 hover:bg-black/10 transition-colors"
             >
               <span className="sr-only">Open main menu</span>
               <svg
@@ -126,7 +142,7 @@ const Navbar = () => {
                 key={link.id}
                 href={`#${link.id}`}
                 onClick={(e) => handleScroll(e, link.id)}
-                className="relative text-md text-white group"
+                className="relative text-lg text-black group"
               >
                 {link.name}
                 <span
@@ -143,7 +159,7 @@ const Navbar = () => {
             <a 
               href="#contact"
               onClick={(e) => handleScroll(e, "contact")}
-              className="px-3 py-2 rounded-[10px] text-[15px] text-white font-light cursor-pointer bg-[linear-gradient(260deg,_#DA7C05_0.36%,_#B923E1_100%)] transform scale-100 hover:scale-105 transition-transform duration-300 ease-in-out"
+              className="px-4 py-2 rounded-[10px] text-[18px] text-white font-light cursor-pointer bg-[linear-gradient(260deg,_#000055_0.56%,_#BA68C8_100%)] transform scale-100 hover:scale-105 transition-transform duration-300 ease-in-out"
             >
               Connect with me <span aria-hidden="true">&rarr;</span>
             </a>
@@ -154,7 +170,7 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {mobileMenuOpen && (
         <div 
-          className="lg:hidden fixed inset-0 z-[60] bg-black bg-opacity-95"
+          className="lg:hidden fixed inset-0 z-[60] bg-black/10 backdrop-blur-sm "
           onClick={() => setMobileMenuOpen(false)}
         >
           <div 
@@ -186,7 +202,7 @@ const Navbar = () => {
                   stroke="currentColor"
                   strokeWidth="1.5"
                   aria-hidden="true"
-                  className="w-6 h-6"
+                  className="w-6 h-6 text-black"
                 >
                   <path
                     d="M6 18 18 6M6 6l12 12"
@@ -203,7 +219,7 @@ const Navbar = () => {
                   key={link.id}
                   href={`#${link.id}`}
                   onClick={(e) => handleScroll(e, link.id)}
-                  className="relative block rounded-lg px-4 py-3 text-lg text-white hover:bg-white/5 transition-colors group"
+                  className="relative block rounded-lg px-4 py-3 text-lg text-black hover:bg-white/5 transition-colors group"
                 >
                   {link.name}
                   <span

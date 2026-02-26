@@ -275,17 +275,19 @@ export default function Hero() {
                 onClick={(e) => handleScroll(e, "contact")}
                 className="px-8 py-2 bg-[linear-gradient(260deg,_#FFD54F_0.36%,_#BA68C8_100%)] text-white font-light rounded-lg
                   hover:shadow-2xl  transition-all duration-300 hover:scale-105
-                  flex items-center justify-center gap-2 group text-xl">
+                  flex items-center justify-center gap-2 group text-xl cursor-pointer">
                 <span>Hire Me</span>
                 <span className="group-hover:translate-x-1 transition-transform duration-300">→</span>
               </button>
+              <a href="https://drive.google.com/file/d/1Yp7bPdLGuxbiVTdZLn32X6QGKm7N00-T/view?usp=sharing">
               <button 
                 className="px-8 py-4 border-2 border-purple-600 text-purple-600 font-light rounded-lg
                   hover:bg-purple-600 hover:text-white transition-all duration-300
-                  flex items-center justify-center gap-2 group text-xl">
+                  flex items-center justify-center gap-2 group text-xl cursor-pointer">
                 <span>Download CV</span>
                 <span className="group-hover:translate-y-0.5 transition-transform duration-300">↓</span>
               </button>
+              </a>
             </div>
           </div>
 

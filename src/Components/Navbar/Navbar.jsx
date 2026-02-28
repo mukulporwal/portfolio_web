@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import logo from "../../assets/logo.png";
-// import logo from "/logo.png"
+// import logo from "../../assets/logo.png";
+import logo from "/logo.png"
 
 const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -104,7 +104,7 @@ const Navbar = () => {
                 <img
                   src={logo}
                   alt="Logo"
-                  className="h-20 w-full object-contain rounded-full brightness-125 contrast-125 group-hover:brightness-150 transition-all duration-300"
+                  className="h-12 w-full object-contain rounded-full brightness-125 contrast-125 group-hover:brightness-150 transition-all duration-300"
                 />
               </div>
             </button>

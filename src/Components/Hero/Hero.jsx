@@ -189,7 +189,7 @@
 
 import React from 'react';
 import Typewriter from "typewriter-effect";
-import myPic from "../../assets/mypic.png";
+import hero_skill from "../../assets/hero_skill.png";
 
 export default function Hero() {
   const handleScroll = (e, id) => {
@@ -296,39 +296,39 @@ export default function Hero() {
             <div className="relative w-[320px] h-[320px] sm:w-[380px] sm:h-[380px]">
               
               {/* Animated gradient ring */}
-              <div className="absolute inset-0 rounded-full bg-gradient-to-br from-purple-500 via-pink-500 to-blue-500 p-1 animate-spin-slow">
-                <div className="w-full h-full rounded-full bg-white"></div>
-              </div>
+              {/* <div className="absolute inset-0 rounded-full bg-gradient-to-br from-purple-500 via-pink-500 to-blue-500 p-1 animate-spin-slow "> */}
+                {/* <div className="w-full h-full rounded-full bg-white"></div> */}
+              {/* </div> */}
               
               {/* Inner decorative circles */}
-              <div className="absolute w-28 h-28 sm:w-32 sm:h-32 bg-gradient-to-br from-yellow-200 to-orange-200 rounded-full opacity-60 top-5 left-5 animate-float"></div>
+              { /* <div className="absolute w-28 h-28 sm:w-32 sm:h-32 bg-gradient-to-br from-yellow-200 to-orange-200 rounded-full opacity-60 top-5 left-5 animate-float"></div> */}
               
-              <div className="absolute w-20 h-20 sm:w-24 sm:h-24 bg-gradient-to-br from-blue-200 to-purple-200 rounded-full opacity-60 bottom-10 left-8 animate-float-delayed"></div>
+              { /* <div className="absolute w-20 h-20 sm:w-24 sm:h-24 bg-gradient-to-br from-blue-200 to-purple-200 rounded-full opacity-60 bottom-10 left-8 animate-float-delayed"></div> */}
               
               {/* Profile Image */}
               <div className="absolute w-64 h-64 sm:w-72 sm:h-72 rounded-full overflow-hidden shadow-2xl ring-8 ring-white top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
                 <img 
-                  src={myPic} 
+                  src={hero_skill} 
                   alt="Mukul Porwal"
                   className="w-full h-full object-cover object-center hover:scale-110 transition-transform duration-500"
                 />
               </div>
 
               {/* Floating tech icons/badges */}
-              <div className="absolute top-8 right-5 bg-white rounded-lg shadow-lg px-3 py-2 animate-float">
-                <span className="text-lg font-light text-purple-600">React</span>
+              <div className="absolute top-20 right-8 bg-white rounded-lg shadow-lg px-3 py-2 animate-float">
+                <span className="text-lg font-light text-purple-600">MongoDB</span>
               </div>
 
-              <div className="absolute top-8 left-3 bg-white rounded-lg shadow-lg px-3 py-2 animate-float">
-                <span className="text-lg font-light text-yellow-800">Express</span>
+              <div className="absolute top-15 left-9 bg-white rounded-lg shadow-lg px-3 py-2 animate-float">
+                <span className="text-lg font-light text-yellow-800">NodeJs</span>
               </div>
               
-              <div className="absolute bottom-16 right-3 bg-white rounded-lg shadow-lg px-3 py-2 animate-float-delayed">
+              <div className="absolute bottom-16 right-7 bg-white rounded-lg shadow-lg px-3 py-2 animate-float-delayed">
                 <span className="text-lg font-light text-blue-600">Node.js</span>
               </div>
               
-              <div className="absolute bottom-24 left-3 bg-white rounded-lg shadow-lg px-3 py-2 animate-float">
-                <span className="text-lg font-light text-green-600">MongoDB</span>
+              <div className="absolute bottom-24 left-8 bg-white rounded-lg shadow-lg px-3 py-2 animate-float">
+                <span className="text-lg font-light text-green-600">Vite</span>
               </div>
             </div>
           </div>
